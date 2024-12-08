@@ -1,7 +1,7 @@
 # Requirements for qdiff environment
 
 # Base dependencies
-python==3.8.5
+#python==3.8.5
 pip==20.3
 pytorch
 torchvision
