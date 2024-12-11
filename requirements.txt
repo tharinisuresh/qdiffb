@@ -1,7 +1,12 @@
 # Requirements for qdiff environment
+python==3.8.5
+
+# PyTorch and CUDA (ensure you have the correct CUDA version installed)
+torch==1.12.1+cu116
+torchvision==0.13.1+cu116
+torchaudio==0.12.1+cu116
 
 # Base dependencies
-#python==3.8.5
 pip==20.3
 pytorch
 torchvision
@@ -25,17 +30,16 @@ kornia==0.6.9
 lmdb==1.3.0
 natsort==8.3.1
 omegaconf==2.1.1
-#opencv-python==4.1.2.30
-opencv-python==4.6.0.66
-opencv-python-headless==4.6.0.66
+opencv_python==4.1.2.30
+opencv_python_headless==4.6.0.66
 pandas==1.4.2
 Pillow==9.0.1
-pytorch-lightning==1.4.2
+pytorch_lightning==1.4.2
 PyYAML==6.0
 six==1.16.0
 tqdm==4.64.0
 transformers==4.22.2
 omegaconf
 git+https://github.com/openai/CLIP.git@main#egg=clip
--e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
 -e .
